@@ -52,6 +52,8 @@ public class ConsentGrantRequestedKafkaConsumerWorker(
         if (consentVersion.EffectiveAt > message.GivenAt)
             throw new InvalidOperationException($"Consent version '{message.ConsentVersionId}' was not effective when consent was given.");
 
+        var now = DateTime.UtcNow;
+        
         var consent = new UserConsent
         {
             GrantRequestId = message.RequestId,
@@ -61,7 +63,9 @@ public class ConsentGrantRequestedKafkaConsumerWorker(
             GivenAt = message.GivenAt,
             ExpiresAt = message.ExpiresAt,
             IpAddress = message.IpAddress,
-            UserAgent = message.UserAgent
+            UserAgent = message.UserAgent,
+            CreatedAt = now,
+            UpdatedAt = now
         };
 
         dataContext.UserConsents.Add(consent);

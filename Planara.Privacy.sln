@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Planara.Privacy", "src\Planara.Privacy.csproj", "{121EE5B5-9D0A-46F2-BDD3-8BE761CAB613}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Planara.Privacy.Tests", "tests\Planara.Privacy.Tests.csproj", "{7993D35C-5A91-4E78-984E-384F22C31610}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{121EE5B5-9D0A-46F2-BDD3-8BE761CAB613}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{121EE5B5-9D0A-46F2-BDD3-8BE761CAB613}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{121EE5B5-9D0A-46F2-BDD3-8BE761CAB613}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7993D35C-5A91-4E78-984E-384F22C31610}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7993D35C-5A91-4E78-984E-384F22C31610}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7993D35C-5A91-4E78-984E-384F22C31610}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7993D35C-5A91-4E78-984E-384F22C31610}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
